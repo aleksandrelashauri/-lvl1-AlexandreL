@@ -1,0 +1,26 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  border: 1px solid rgb(8, 5, 5);
+}
+
+.red {
+  background: rgb(150, 9, 9);
+}
+.green {
+  background: rgb(22, 119, 22);
+}
+#inForm {
+  width: 458px;
+}
+#targetTbl {
+  width: 458px;
+}
