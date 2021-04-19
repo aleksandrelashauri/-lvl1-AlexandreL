@@ -23,7 +23,8 @@ let students = [
     }
    
 ];
-
+let avg=[0,0,0,0];
+function generateAvg(){
 //calculate avarage
 let avg=[0,0,0,0];
 
@@ -33,74 +34,71 @@ for (let i=0; i<students.length; i++){
     }
 }
 for (let i=0; i<avg.length; i++){
-    avg[i] /= subject.length;
+    avg[i] /= students.length;
 }
-
-//get containers
-let container= document.getElementById('container');
-let thead= document.querySelector('#container thead tr');
-let tbody = document.querySelector('#container tbody');
-
-//generate header 
-let tmp= '<th>Name</th>' +
-'<th>Lastname</th>';
-
-for (let i=0; i<subject.length; i++){
-    tmp+=`<th>${subject[i]}</th>`;
-}
-thead.innerHTML += tmp;
-
 //generate html avarages
-
-tmp='<tr>'+
+let  tmp='<tfoot>'+
+    '<tr>'+
     '<td colspan="2"> Avarage </td>';
+
 for(let i=0; i < avg.length; i++){
     tmp+=`<td>${avg[i]}</td>`;
 }
-tmp += '</tr>';
-tbody.innerHTML += tmp ;
+tmp += '</tr>'+
+    '</tfoot>';
+document.querySelector('#container tfoot').innerHTML=tmp;
 
-//generate body 
-tmp='';
-
-for (let i = 0; i < students.length; i++) {
-    tmp += `<tr>
-             <td>${students[i].name}</td>
-             <td>${students[i]['lastname']}</td>
-             `;
-    
-    for (let j = 0; j < subject.length; j++){
-        tmp+= `<td class="${avg[j] > students[i].scores[j] ? 'red' : 'green' }"> ${students[i].scores[j]}</td>`;
-    }
-    tmp += '</tr>';
 }
+function generateHead(){
+let thead= document.querySelector('#container thead tr');
+let tmp= '<th>Name</th><th>Lastname</th>';
+for (let i=0; i<subject.length; i++){
+    tmp+=`<th>${subject[i]}</th>`;
+}
+thead.innerHTML = tmp;
+}
+function addRow(student){
+let tbody = document.querySelector('#container tbody');
+let tmp = `<tr>
+            <td>${student.name}</td>
+            <td>${student.lastname}</td>
+            `;
+for (let j = 0; j <student.scores.length; j++){
+ tmp += `<td class="${avg[j] > student.scores[j] ? 'red' : 'green' }"> ${student.scores[j]}</td>`;
+}
+tmp += '</tr>';
+
 tbody.innerHTML+=tmp;
-
-// add Row
-
-document.getElementById('inForm').onsubmit = function(e)
-{
-    let newRow,i;
-    e = e || window.event;
-    if (e.preventDefault)
-    {
-        e.preventDefault();
-        e.stopPropagation();
-    }
-    e.returnValue = false;
-    e.cancelBubble = true;
-    newRow = '<tr>';
-   
-    for(i=0;i<this.elements.length;i++)
-    {
-        if (this.elements[i].tagName.toLowerCase() === 'input' && this.elements[i].type === 'text' )
-        {//red.green
-            newRow += `<td class="${this.elements[i] > '50' ? 'red' : 'green' }">`+this.elements[i].value+'</td>';
-        }
-    }
-    document.getElementById('targetTbl').innerHTML += newRow + '</tr>';
-    return false;
+return true;
+}
+function addStudent(e){
+e.preventDefault();
+let fields= document.querySelectorAll('#add_student_form input');
+let newStudent= { 
+    name:'',
+    lastname:'',
+    scores: []
 };
-
-
-
+for(let i=0; i< fields.length; i++){
+    if (fields[i].name==='name'){
+        newStudent.name=fields[i].value;
+    }else if (fields[i].name === 'lastname'){
+        newStudent.lastname=fields[i].value;
+    }else{
+        newStudent.scores.push(parseInt(fields[i].value) ? parseInt(fields[i].value):0);
+    }
+}
+students.push(newStudent);
+addRow(newStudent);
+generateAvg();
+return true;
+}
+function init(){
+document.getElementById('add_student_form').addEventListener('submit', addStudent);
+generateHead(); 
+generateAvg();
+for(let i=0; i< students.length; i++){
+    addRow(students[i]);
+    }
+}
+init();
