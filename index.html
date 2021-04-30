@@ -2,11 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>table</title>
-    <link rel="stylesheet" href="./style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
     <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <table id="container">
@@ -16,13 +19,22 @@
       <tbody></tbody>
       <tfoot></tfoot>
     </table>
+
+    <table id="container2">
+      <thead>
+        <tr></tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot></tfoot>
+    </table>
+
     <form action="" id="add_student_form">
-      <input type="text" name="name" />
-      <input type="text" name="lastname" />
-      <input type="text" name="Math" />
-      <input type="text" name="Biology" />
-      <input type="text" name="Geography" />
-      <input type="text" name="History" />
+      <input type="text" name="name" placeholder="name" />
+      <input type="text" name="lastname" placeholder="lastname" />
+      <input type="text" name="html" placeholder="score" />
+      <input type="text" name="js" placeholder="score" />
+      <input type="text" name="math" placeholder="score" />
+      <input type="text" name="css" placeholder="score" />
       <button type="submit">add</button>
     </form>
   </body>

@@ -3,18 +3,29 @@ body {
   margin: 0;
   padding: 0;
   min-width: 100%;
+  min-height: 100vh;
   font-size: 20px;
   background-color: #fff;
+  font-family: system-ui;
+}
+
+:root {
+  --text-color: #000;
+  --minmax: minmax(100px, auto);
+  --grid-gap: 8px 16px;
 }
 
 * {
   box-sizing: border-box;
-  border: 1px solid rgb(8, 5, 5);
+  border: 1px solid red;
 }
 
 .red {
-  background: rgb(150, 9, 9);
+  background: #030202;
 }
 .green {
-  background: rgb(22, 119, 22);
+  background: chartreuse;
+}
+.addsubject {
+  background-color: black;
 }
