@@ -1,6 +1,40 @@
-.results {
+html,
+body {
+  display: block;
+  background-image: url(../lvl1/black.jpg);
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+}
+.details {
+  color: #f8f8ff;
+}
+.header {
+  background-color: #202020;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 98%;
+}
+
+.form {
+  display: flex;
+}
+
+#info {
   background-color: #ddd;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 1rem;
+}
+.myTube {
+  background-color: #ff0000;
+  color: #f8f8ff;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #181818;
 }
