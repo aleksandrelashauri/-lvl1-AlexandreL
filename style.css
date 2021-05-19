@@ -1,0 +1,23 @@
+.parallax {
+  /* The image used */
+  background-image: url("http://themes.pixelstrap.com/multikart/assets/images/parallax/1.jpg");
+
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-light {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  margin-right: 5px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  cursor: pointer;
+  background-color: #d0edff;
+}
