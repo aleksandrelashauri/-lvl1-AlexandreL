@@ -1,16 +1,121 @@
-.parallax {
-  /* The image used */
-  background-image: url("http://themes.pixelstrap.com/multikart/assets/images/parallax/1.jpg");
+/**two picture rgba(249, 49, 84, 0.34) **/
+/*Zoom in two picture */
+.geeks {
+  overflow: hidden;
+  margin: 0 auto;
+}
 
-  /* Full height */
-  height: 100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+.geeks .imge {
+  min-height: 30vh;
+  min-width: 100%;
+  transition: 0.5s all ease-in-out;
+  background-image: url(http://themes.pixelstrap.com/multikart/assets/images/sub-banner1.jpg);
   background-size: cover;
 }
-.bg-light {
+
+.geeks:hover .imge {
+  transform: scale(1.1);
+}
+.geeks1 {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.geeks1 .imge1 {
+  min-height: 30vh;
+  min-width: 100%;
+  transition: 0.5s all ease-in-out;
+  background-image: url(http://themes.pixelstrap.com/multikart/assets/images/sub-banner2.jpg);
+  background-size: cover;
+}
+
+.geeks1:hover .imge1 {
+  transform: scale(1.1);
+}
+
+.a {
+  color: black !important;
+}
+/*   intagram*/
+
+.fa-heart:hover {
+  color: red;
+}
+.fa-facebook:hover {
+  color: red;
+}
+.fa-map-marker:hover {
+  color: red;
+}
+.fa-google-plus:hover {
+  color: green;
+}
+/*armaxsovs*/
+.img-wrapper {
+  display: inline-block;
+  background-image: url(http://themes.pixelstrap.com/multikart/assets/images/pro3/28.jpg);
+  background-size: cover;
+}
+.img-wrapper > img {
+  vertical-align: top;
+}
+
+.img-wrapper > img:hover {
+  opacity: 0;
+}
+
+.img-wrapper1 {
+  display: inline-block;
+  background-image: url(http://themes.pixelstrap.com/multikart/assets/images/pro3/2.jpg);
+  background-size: cover;
+}
+.img-wrapper1 > img {
+  vertical-align: top;
+}
+
+.img-wrapper1 > img:hover {
+  opacity: 0;
+}
+.img-wrapper2 {
+  display: inline-block;
+  background-image: url(http://themes.pixelstrap.com/multikart/assets/images/pro3/34.jpg);
+  background-size: cover;
+}
+.img-wrapper2 > img {
+  vertical-align: top;
+}
+
+.img-wrapper2 > img:hover {
+  opacity: 0;
+}
+.img-wrapper3 {
+  display: inline-block;
+  background-image: url(http://themes.pixelstrap.com/multikart/assets/images/pro3/36.jpg);
+  background-size: cover;
+}
+.img-wrapper3 > img {
+  vertical-align: top;
+}
+
+.img-wrapper3 > img:hover {
+  opacity: 0;
+}
+
+.img-wrapper4 {
+  display: inline-block;
+  background-image: url(http://themes.pixelstrap.com/multikart/assets/images/pro3/36.jpg);
+  background-size: cover;
+}
+.img-wrapper4 > img {
+  vertical-align: top;
+}
+
+.img-wrapper4 > img:hover {
+  opacity: 0;
+}
+/*T-shirt color*/
+.bg-light0 {
+  background-color: #d0edff;
   display: inline-block;
   height: 20px;
   width: 20px;
@@ -19,5 +124,64 @@
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
   cursor: pointer;
-  background-color: #d0edff;
+}
+.bg-light1 {
+  background-color: #f1e7e6;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  margin-right: 5px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+.bg-light2 {
+  background-color: #bfbfbf;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  margin-right: 5px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+/*instagram avatar */
+.avatar {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.instagramavatar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(249, 49, 84, 0.34);
+}
+
+.group4:hover .instagramavatar {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-instagram:hover {
+  color: #eee;
 }
