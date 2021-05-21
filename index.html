@@ -26,16 +26,21 @@
    <!-- header info -->  
    
   <header>
-<div class="container ">
-  <div class="row">
-<div class="pt-4 pb-4 col-xl-12 fw-lighter" >
-  <div class="fw-lighter">Welcome to Our store Multikart
-  <i class="fa fa-phone" aria-hidden="true"></i>Call Us: 123 - 456 - 7890
-  <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-  <i class="fa fa-user" aria-hidden="true"> My Account
-  </i>
-  </div>    
-</div>
+    <div class="container ">
+      <div class="row">
+  
+     <div class="footer-social">
+      <ul class="list-group list-group flush  pt-4 pb-4 fw-lighter fw-lighter list-group-horizontal">
+          <li class="list-group-item col-3"><i>Welcome to Our store Multikart</i></a></li>
+          <li class="list-group-item col-2"><i class="fa fa-phone" aria-hidden="true"></i>Call Us: 123 - 456 - 7890</a></li>
+          <li class="list-group-item offset-4 col-1"><a href="#"> <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+            </li>
+          <li class="list-group-item col-2"><a href="#"><i class="fa fa-user" aria-hidden="true"> My Account
+          </i></a></li>
+      </ul>
+  </div>
+
+  
 
 
  <!-- header sidemenu --> 
@@ -357,24 +362,35 @@
 <main>
   <!-- main carousel -->
   <div class="container-fluid">
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="http://themes.pixelstrap.com/multikart/assets/images/home-banner/1.jpg" class="d-block w-100" alt="...">
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="http://themes.pixelstrap.com/multikart/assets/images/home-banner/1.jpg" class="d-block w-100" alt="...">
+         
+          <div class="carousel-caption text-end;">
+            <h4 class="text-secondary">Welcome To Fashion</h4>
+            <h1 class="text-dark">MEN FASHION</h1>
+            <button type="button" class="btn btn-outline-danger">SHOP NOW</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="http://themes.pixelstrap.com/multikart/assets/images/home-banner/2.jpg" class="d-block w-100" alt="...">
+          <div class=" carousel-caption text-start text-center " >
+            <h4 class="text-secondary">Welcome To Fashion</p>
+            <h1   class="text-dark">WOMEN FASHION</p>
+            <button type="button" class="btn btn-outline-danger">SHOP NOW</button>
+          </div>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="http://themes.pixelstrap.com/multikart/assets/images/home-banner/2.jpg" class="d-block w-100" alt="...">
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 </div>
 
 
@@ -540,12 +556,12 @@
   <div class="card ">
     <div class="card-img "
      style="background-image: url(http://themes.pixelstrap.com/multikart/assets/images/parallax/1.jpg) ;
-      background-attachment: fixed; background-size: cover;  background-repeat: no-repeat;  height: 70vh;  
+      background-attachment: fixed; background-size: cover;  background-repeat: no-repeat;  height: 63vh;  
       background-position:center ;
      ">
-      <h5 class=" fs-2 fw-bold text-danger text-center">2021</h5>
-      <p class=" fs-2 fw-bold text-center">FASHION TRENDS</p>
-      <p class=" fs-2 fw-bold text-secondary text-center">SPECIAL OFFER</p>
+      <h2 class=" fs-1 fw-bold text-danger text-center:right">2021</h2>
+      <h3 class=" fs-2 fw-bold text-end:text-center">FASHION TRENDS</h3>
+      <h4 class=" fs-3 fw-bold text-secondary text-end:text-center">SPECIAL OFFER</h4>
     </div>
   </div>
   <!--Exclusive Products-->

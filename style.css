@@ -40,7 +40,9 @@
 .fa {
   color: black;
 }
-
+.fa-star {
+  color: gold;
+}
 .fa-heart:hover {
   color: #ff4c3b;
 }
