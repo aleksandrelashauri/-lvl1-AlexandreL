@@ -37,18 +37,30 @@
   color: black !important;
 }
 /*   intagram*/
+.fa {
+  color: black;
+}
 
 .fa-heart:hover {
-  color: red;
+  color: #ff4c3b;
 }
 .fa-facebook:hover {
-  color: red;
+  color: #ff4c3b;
+}
+.fa-twitter:hover {
+  color: #ff4c3b;
+}
+li .fa-instagram:hover {
+  color: #ff4c3b;
+}
+.fa-rss:hover {
+  color: #ff4c3b;
 }
 .fa-map-marker:hover {
-  color: red;
+  color: #ff4c3b;
 }
 .fa-google-plus:hover {
-  color: green;
+  color: #ff4c3b;
 }
 /*armaxsovs*/
 .img-wrapper {
@@ -184,4 +196,50 @@
 
 .fa-instagram:hover {
   color: #eee;
+}
+
+/* red forgraound pictures*/
+.avatar {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.instagramavatar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(249, 49, 84, 0.34);
+}
+
+.group4:hover .instagramavatar {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+/*fade in */
+.hover07 figure img {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.hover07 figure:hover img {
+  -webkit-filter: blur(0);
+  filter: blur(0);
 }
