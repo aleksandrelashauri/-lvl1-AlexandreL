@@ -2,65 +2,65 @@
 /*Zoom in two picture */
 .top-header {
   background-color: #f8f8f8;
+  p {
+    color: #999999;
+  }
 }
-.top-header p {
-  color: #999999;
-}
-
 /*paralax text  */
-.banner-contain h2 {
-  font-size: 100px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: -15px;
-  color: #ff4c3b;
+.banner-contain {
+  h2 {
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: -15px;
+    color: #ff4c3b;
+  }
+  h3 {
+    font-size: 60px;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 24px;
+    color: #777777;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    padding-top: 10px;
+    margin-bottom: -5px;
+    line-height: 1.3;
+  }
 }
-.banner-contain h3 {
-  font-size: 60px;
-  color: #333333;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.banner-contain h4 {
-  font-size: 24px;
-  color: #777777;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  padding-top: 10px;
-  margin-bottom: -5px;
-  line-height: 1.3;
-}
-
 /*Zoom IN */
 .geeks {
   overflow: hidden;
   margin: 0 auto;
+  .imge {
+    min-height: 30vh;
+    min-width: 100%;
+    transition: 0.5s all ease-in-out;
+    background-image: url(http://themes.pixelstrap.com/multikart/assets/images/sub-banner1.jpg);
+    background-size: cover;
+  }
+  &:hover .imge {
+    transform: scale(1.1);
+  }
 }
-.geeks .imge {
-  min-height: 30vh;
-  min-width: 100%;
-  transition: 0.5s all ease-in-out;
-  background-image: url(http://themes.pixelstrap.com/multikart/assets/images/sub-banner1.jpg);
-  background-size: cover;
-}
-.geeks:hover .imge {
-  transform: scale(1.1);
-}
-
 .geeks1 {
   overflow: hidden;
   margin: 0 auto;
-}
-.geeks1 .imge1 {
-  min-height: 30vh;
-  min-width: 100%;
-  transition: 0.5s all ease-in-out;
-  background-image: url(http://themes.pixelstrap.com/multikart/assets/images/sub-banner2.jpg);
-  background-size: cover;
-}
-.geeks1:hover .imge1 {
-  transform: scale(1.1);
+  .imge1 {
+    min-height: 30vh;
+    min-width: 100%;
+    transition: 0.5s all ease-in-out;
+    background-image: url(http://themes.pixelstrap.com/multikart/assets/images/sub-banner2.jpg);
+    background-size: cover;
+  }
+
+  &:hover .imge1 {
+    transform: scale(1.1);
+  }
 }
 
 /* cards pictuers */
@@ -68,62 +68,59 @@
   display: inline-block;
   background-image: url(http://themes.pixelstrap.com/multikart/assets/images/pro3/28.jpg);
   background-size: cover;
+  > img {
+    vertical-align: top;
+  }
+  & > img:hover {
+    opacity: 0;
+  }
 }
-.img-wrapper > img {
-  vertical-align: top;
-}
-.img-wrapper > img:hover {
-  opacity: 0;
-}
-
 .img-wrapper1 {
   display: inline-block;
   background-image: url(http://themes.pixelstrap.com/multikart/assets/images/pro3/2.jpg);
   background-size: cover;
+  > img {
+    vertical-align: top;
+  }
+  & > img:hover {
+    opacity: 0;
+  }
 }
-.img-wrapper1 > img {
-  vertical-align: top;
-}
-.img-wrapper1 > img:hover {
-  opacity: 0;
-}
-
 .img-wrapper2 {
   display: inline-block;
   background-image: url(http://themes.pixelstrap.com/multikart/assets/images/pro3/34.jpg);
   background-size: cover;
-}
-.img-wrapper2 > img {
-  vertical-align: top;
-}
-.img-wrapper2 > img:hover {
-  opacity: 0;
+  > img {
+    vertical-align: top;
+  }
+  & > img:hover {
+    opacity: 0;
+  }
 }
 
 .img-wrapper3 {
   display: inline-block;
   background-image: url(http://themes.pixelstrap.com/multikart/assets/images/pro3/36.jpg);
   background-size: cover;
-}
-.img-wrapper3 > img {
-  vertical-align: top;
-}
-.img-wrapper3 > img:hover {
-  opacity: 0;
-}
+  > img {
+    vertical-align: top;
+  }
 
+  & > img:hover {
+    opacity: 0;
+  }
+}
 .img-wrapper4 {
   display: inline-block;
   background-image: url(http://themes.pixelstrap.com/multikart/assets/images/pro3/36.jpg);
   background-size: cover;
+  > img {
+    vertical-align: top;
+  }
+  & > img:hover {
+    opacity: 0;
+  }
 }
-.img-wrapper4 > img {
-  vertical-align: top;
-}
-.img-wrapper4 > img:hover {
-  opacity: 0;
-}
-
 /*T-shirt color*/
 .bg-light0 {
   background-color: #d0edff;
@@ -136,7 +133,6 @@
   transition: all 0.1s ease;
   cursor: pointer;
 }
-
 .bg-light1 {
   background-color: #f1e7e6;
   display: inline-block;
@@ -148,7 +144,6 @@
   transition: all 0.1s ease;
   cursor: pointer;
 }
-
 .bg-light2 {
   background-color: #a09999;
   display: inline-block;
@@ -160,7 +155,6 @@
   transition: all 0.1s ease;
   cursor: pointer;
 }
-
 /*instagram avatar */
 .avatar {
   display: block;
@@ -201,14 +195,15 @@
 }
 
 /* red forgraound pictures*/
+
 /*fade in */
+
 .hover07 figure img {
   -webkit-filter: blur(1px);
   filter: blur(1px);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 .hover07 figure:hover img {
   -webkit-filter: blur(0);
   filter: blur(0);
@@ -217,28 +212,22 @@
 /* font-awasome*/
 .fa {
   color: black;
+  &:hover {
+    color: #ff4c3b;
+  }
 }
-.fa:hover {
-  color: #ff4c3b;
-}
-
 .fa-phone {
   color: #ff4c3b;
 }
-
 .fa-heart {
   color: #999999;
 }
-
 .fa-user {
   color: #999999;
 }
-
 .fa-star {
   color: gold;
+  &:hover {
+    color: gold;
+  }
 }
-.fa-star:hover {
-  color: gold;
-}
-
-/*# sourceMappingURL=style.css.map */
