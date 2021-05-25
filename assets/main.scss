@@ -1,5 +1,5 @@
-/**two picture rgba(249, 49, 84, 0.34) **/
-/*Zoom in two picture */
+@use "../node_modules/bootstrap/scss/bootstrap";
+
 .top-header {
   background-color: #f8f8f8;
   p {
@@ -32,6 +32,7 @@
     line-height: 1.3;
   }
 }
+
 /*Zoom IN */
 .geeks {
   overflow: hidden;
