@@ -1,3 +1,7 @@
+
+
+
+
 const myForm=document.getElementById('myForm');
 myForm.addEventListener('submit',function(e){
     e.preventdefault();
@@ -15,14 +19,11 @@ function fetchData(){
     const html = results
     .map(results => {
         return `
-        <div class="card col">
+        <div class="card col-lg-3 " id="B">
              <img src="${results.image}"    class="card-img-top"  type="image"> 
              </image>
-          
              <div class="card-body">
-
              <div class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></div>
-
         <div> ${results.category}</div>
         <div> ${results.price}</div>
         <ul class=" row color-variant" >
@@ -45,10 +46,11 @@ function fetchData(){
 }
 
 fetchData();
-let slider = document.getElementById("myRange");
-let output = document.getElementById("demo");
-output.innerHTML = slider.value;
 
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
+
+function myFunction() {
+
+
+    document.getElementById("B").classList.add('col');
+
+ }

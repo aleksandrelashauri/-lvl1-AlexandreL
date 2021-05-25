@@ -386,10 +386,8 @@
 
 
   <div class="container">
-    <div class="row">
-
-      <div class="col-sm-3">
-
+    <div class="row ">
+      <div class="col-3  d-sm-none d-md-block d-none d-sm-block">
         <div class="collection-collapse-block open">
           <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
            BRAND
@@ -482,7 +480,6 @@
           <div>$<span id="demo"></span></div>
         </div>
        </div>
-
    </div>
  </div>
 </div>
@@ -551,7 +548,7 @@
 
 
 
-<div class="col">
+<div class="col-9">
 
       
     
@@ -591,8 +588,22 @@
             </div>
           </div>
               <div class="col">
-                    <i class="fa fa-th grid-layout-view"></i>
-                    <i class="fa fa-list-ul list-layout-view"></i>
+                
+                <button onclick="myFunction()">Try it</button>
+                
+                <div id="myDIV" class="mystyle">
+                This is a DIV element.
+                </div>
+                
+                <script>
+                function myFunction() {
+                  var element = document.getElementById("myDIV");
+                  element.classList.remove("mystyle");
+                }
+                </script>
+            
+                <button  class="fa fa-th grid-layout-view" onclick="myFunction()">Try it</button>
+                   <!-- <button  class="fa fa-list-ul list-layout-view" onclick="myFunction()">Try it</button>-->
               </div>
               <div class="col">
                      <img src="http://themes.pixelstrap.com/multikart/assets/images/icon/2.png" alt="" class="product-2-layout-view">
@@ -651,15 +662,9 @@
     </div>
 </div>
 </div>
+
   <!--svg Icons-->
   
-  
-
-
-
-
-  
-  </main>
 
 
 
