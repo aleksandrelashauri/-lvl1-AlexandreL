@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./script.js" defer></script>
@@ -356,7 +358,10 @@
 
 
 <main>
-  <!-- top main -->
+
+  
+    
+<!-- top main -->
   <div class="breadcrumb-section">
     <div class="container">
         <div class="row pt-4 pb-4">
@@ -376,15 +381,22 @@
         </div>
     </div>
 </div>
+
+
+
+
   <div class="container">
     <div class="row">
 
       <div class="col-sm-3">
 
         <div class="collection-collapse-block open">
-          <h3 class="collapse-block-title">brand</h3>
-          <div class="collection-collapse-block-content" style="display: block;">
-              <div class="collection-brand-filter">
+          <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+           BRAND
+          </button>
+        </p>
+        <div class="collapse1" id="collapseExample1">
+          <div class="card card-body">
                   <div class="form-check collection-filter-checkbox">
                       <input type="checkbox" class="form-check-input" id="zara">
                       <label class="form-check-label" for="zara">zara</label>
@@ -408,61 +420,73 @@
               </div>
           </div>
       </div>
+      <div class="collection-collapse-block open">
+      <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+       COLORS
+      </button>
+    </p>
+    <div class="collapse2" id="collapseExample2">
+      <div class="card card-body">
+        <div class="color-selector">
+        <ul class="row">
+          <div class="color-1"></div>
+          <div class="color-2"></div>
+          <div class="color-3 active"></div>
+          <div class="color-4"></div>
+          <div class="color-5"></div>
+          <div class="color-6"></div>
+          <div class="color-7"></div>
+      </ul>
+    </div>
+  </div>
+  </div>
+ </div>
 
-        <div class="collection-collapse-block open">
+ <div class="collection-collapse-block open">
+  <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+  SIZE
+  </button>
+</p>
+<div class="collapse3" id="collapseExample3">
+  <div class="card card-body">
+    <div class="form-check collection-filter-checkbox">
+      <input type="checkbox" class="form-check-input" id="hundred">
+      <label class="form-check-label" for="hundred">s</label>
+  </div>
+  <div class="form-check collection-filter-checkbox">
+      <input type="checkbox" class="form-check-input" id="twohundred">
+      <label class="form-check-label" for="twohundred">m</label>
+  </div>
+  <div class="form-check collection-filter-checkbox">
+      <input type="checkbox" class="form-check-input" id="threehundred">
+      <label class="form-check-label" for="threehundred">l</label>
+  </div>
+  <div class="form-check collection-filter-checkbox">
+      <input type="checkbox" class="form-check-input" id="fourhundred">
+      <label class="form-check-label" for="fourhundred">xl</label>
+  </div>
+</div>
+</div>
+</div>
+ <div class="collection-collapse-block open">
+   <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+ PRICE
+   </button>
+ </p>
+ <div class="collapse5" id="collapseExample5">
+   <div class="card card-body">
+   <div class="collection-collapse-block-content">
+       <div class="wrapper mt-3">
+        <div class="slidecontainer">
+          <input type="range" min="0" max="1500" value="50" class="slider" id="myRange">
+          <div>$<span id="demo"></span></div>
+        </div>
+       </div>
 
-          <h3 class="collapse-block-title">colors</h3>
-
-          <div class="collection-collapse-block-content" style="display: block;">
-
-              <div class="color-selector">
-                  <ul>
-                      <li class="color-1"></li>
-                      <li class="color-2"></li>
-                      <li class="color-3 active"></li>
-                      <li class="color-4"></li>
-                      <li class="color-5"></li>
-                      <li class="color-6"></li>
-                      <li class="color-7"></li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-
-       <div class="collection-collapse-block border-0 open">
-                                <h3 class="collapse-block-title">size</h3>
-                                <div class="collection-collapse-block-content">
-                                    <div class="collection-brand-filter">
-                                        <div class="form-check collection-filter-checkbox">
-                                            <input type="checkbox" class="form-check-input" id="hundred">
-                                            <label class="form-check-label" for="hundred">s</label>
-                                        </div>
-                                        <div class="form-check collection-filter-checkbox">
-                                            <input type="checkbox" class="form-check-input" id="twohundred">
-                                            <label class="form-check-label" for="twohundred">m</label>
-                                        </div>
-                                        <div class="form-check collection-filter-checkbox">
-                                            <input type="checkbox" class="form-check-input" id="threehundred">
-                                            <label class="form-check-label" for="threehundred">l</label>
-                                        </div>
-                                        <div class="form-check collection-filter-checkbox">
-                                            <input type="checkbox" class="form-check-input" id="fourhundred">
-                                            <label class="form-check-label" for="fourhundred">xl</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="collection-collapse-block border-0 open">
-                              <h3 class="collapse-block-title">price</h3>
-                              <div class="collection-collapse-block-content">
-                                  <div class="wrapper mt-3">
-                                      <div class="range-slider">
-                                          <span class="irs js-irs-0"><span class="irs"><span class="irs-line" tabindex="-1"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="visibility: hidden;">$0</span><span class="irs-max" style="visibility: hidden;">$1.500</span><span class="irs-from" style="visibility: visible; left: 0%;">$0</span><span class="irs-to" style="visibility: visible; left: 71.8954%;">$1.500</span><span class="irs-single" style="visibility: hidden; left: 27.1242%;">$0 - $1.500</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 2.61438%; width: 94.7712%;"></span><span class="irs-shadow shadow-from" style="display: none;"></span><span class="irs-shadow shadow-to" style="display: none;"></span><span class="irs-slider from" style="left: 0%;"></span><span class="irs-slider to" style="left: 94.7712%;"></span></span><input type="text" class="js-range-slider irs-hidden-input" value="" readonly="">
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-       
+   </div>
+ </div>
+</div>
+</div>
        
         <div class=" row row-cols-1 ">
       <div class="col ">
