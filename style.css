@@ -10729,6 +10729,61 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.color-selector ul li.active:after {
+  content: "";
+  background-image: url("http://www.w3.org/2000/svg");
+  top: 9px;
+  right: 4px;
+  height: 15px;
+  width: 15px;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: 0.4;
+}
+
+.color-selector ul .color-1 {
+  background-color: white;
+}
+
+.color-selector ul .color-2 {
+  background-color: grey;
+}
+
+.color-selector ul li.active {
+  border: 1px solid black;
+}
+
+.color-selector ul .color-3 {
+  background-color: red;
+}
+
+.color-selector ul .color-4 {
+  background-color: purple;
+}
+
+.color-selector ul .color-5 {
+  background-color: blue;
+}
+
+.color-selector ul .color-6 {
+  background-color: yellow;
+}
+
+.color-selector ul .color-7 {
+  background-color: green;
+}
+
+.color-selector ul li {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 1px solid #444444;
+}
+
 .top-header {
   background-color: #f8f8f8;
 }
