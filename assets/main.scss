@@ -1,5 +1,7 @@
 @use "../node_modules/bootstrap/scss/bootstrap";
-
+.breadcrumb-section {
+  background-color: #f8f8f8;
+}
 .slidecontainer {
   width: 100%;
 }
@@ -311,9 +313,6 @@
 .fa-user {
   color: #999999;
 }
-.fa-star {
+.checked {
   color: gold;
-  &:hover {
-    color: gold;
-  }
 }

@@ -10729,6 +10729,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.breadcrumb-section {
+  background-color: #f8f8f8;
+}
+
 .slidecontainer {
   width: 100%;
 }
@@ -11055,10 +11059,7 @@ textarea.form-control-lg {
   color: #999999;
 }
 
-.fa-star {
-  color: gold;
-}
-.fa-star:hover {
+.checked {
   color: gold;
 }
 

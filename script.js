@@ -19,11 +19,13 @@ function fetchData(){
     const html = results
     .map(results => {
         return `
-        <div class="card col-lg-3 " id="B">
-             <img src="${results.image}"    class="card-img-top"  type="image"> 
+        
+        <div class="card" id="a">
+             <img src="${results.image}" class="card-img-top"  type="image"> 
              </image>
              <div class="card-body">
-             <div class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></div>
+             <div class="rating"><i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i>
+                 <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star"></i></div>
         <div> ${results.category}</div>
         <div> ${results.price}</div>
         <ul class=" row color-variant" >
@@ -31,6 +33,7 @@ function fetchData(){
         <li class="col-1 bg-light1"></li>
         <li class="col-1 bg-light1"></li>
       </ul>
+        </div>
         </div>
         </div>
         `;
@@ -54,9 +57,26 @@ output.innerHTML = slider.value;
 slider.oninput = function() {
   output.innerHTML = this.value;
 }
-function myFunction() {
 
 
-    document.getElementById("B").classList.add('col');
+function ChangeClass1() {
+    document.getElementById("a").className = "col-lg-3";
+ }
+ function ChangeClass2() {
+    document.getElementById("a").className = "col-lg-12";
+ }
 
+
+
+ function ChangeClass3() {
+    document.getElementById("a").className = "col-lg-6";
+ }
+ function ChangeClass4() {
+    document.getElementById("a").className = "col-lg-4 col-6";
+ }
+ function ChangeClass5() {
+    document.getElementById("a").className = "col-xl-3 col-6";
+ }
+ function ChangeClass6() {
+    document.getElementById("a").className = "col-lg-2";
  }
