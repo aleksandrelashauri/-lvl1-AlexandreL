@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -214,8 +213,6 @@
             <!--NAVINAVINAVI-->
             
         <div class=" ms-auto col-auto">
-
-
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
                   <a class="navbar-brand" href="#"></a>
                   <button class="navbar-toggler fa fa-bars sidebar-bar bar-style" type="button" data-bs-toggle="offcanvas"
@@ -224,13 +221,6 @@
                   </button>
                   <div class="collapse navbar-collapse" tabindex="-1" id="offcanvas" 
                   aria-labelledby="offcanvasRightLabel">
-
-                
-
-                   
-
-
-
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -444,8 +434,8 @@
 <div class="collapse3" id="collapseExample3">
   <div class="card card-body">
     <div class="form-check collection-filter-checkbox">
-      <input type="checkbox" class="form-check-input" id="hundred">
-      <label class="form-check-label" for="hundred">s</label>
+      <input type="checkbox" class="form-check-input  " id="hundred">
+      <label class="form-check-label dange" for="hundred">s</label>
   </div>
   <div class="form-check collection-filter-checkbox">
       <input type="checkbox" class="form-check-input" id="twohundred">
@@ -572,14 +562,187 @@
     </div>
   </div>  
 
+  <div class="row d-md-none">
+    <div class="col-xl-12">
+<button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+ <span class="filter-btn btn btn-theme"><i class="fa fa-filter" aria-hidden="true"></i> Filter</span>
+</button>
 
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <div class="col">
+        <div class="collection-collapse-block open">
+          <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+           BRAND
+          </button>
+        <p></p>
+        <div class="collapse1" id="collapseExample1">
+          <div class="card card-body">
+                  <div class="form-check collection-filter-checkbox">
+                      <input type="checkbox" class="form-check-input" id="zara">
+                      <label class="form-check-label" for="zara">zara</label>
+                  </div>
+                  <div class="form-check collection-filter-checkbox">
+                      <input type="checkbox" class="form-check-input" id="vera-moda">
+                      <label class="form-check-label" for="vera-moda">vera-moda</label>
+                  </div>
+                  <div class="form-check collection-filter-checkbox">
+                      <input type="checkbox" class="form-check-input" id="forever-21">
+                      <label class="form-check-label" for="forever-21">forever-21</label>
+                  </div>
+                  <div class="form-check collection-filter-checkbox">
+                      <input type="checkbox" class="form-check-input" id="roadster">
+                      <label class="form-check-label" for="roadster">roadster</label>
+                  </div>
+                  <div class="form-check collection-filter-checkbox">
+                      <input type="checkbox" class="form-check-input" id="only">
+                      <label class="form-check-label" for="only">only</label>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="collection-collapse-block open">
+      <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+       COLORS
+      </button>
+    <p></p>
+    <div class="collapse2" id="collapseExample2">
+      <div class="card card-body">
+        <div class="color-selector">
+        <ul class="row">
+          <div class="color-1"></div>
+          <div class="color-2"></div>
+          <div class="color-3 active"></div>
+          <div class="color-4"></div>
+          <div class="color-5"></div>
+          <div class="color-6"></div>
+          <div class="color-7"></div>
+      </ul>
+    </div>
+  </div>
+  </div>
+ </div>
+
+ <div class="collection-collapse-block open">
+  <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+  SIZE
+  </button>
+<p></p>
+<div class="collapse3" id="collapseExample3">
+  <div class="card card-body">
+    <div class="form-check collection-filter-checkbox">
+      <input type="checkbox" class="form-check-input  " id="hundred">
+      <label class="form-check-label dange" for="hundred">s</label>
+  </div>
+  <div class="form-check collection-filter-checkbox">
+      <input type="checkbox" class="form-check-input" id="twohundred">
+      <label class="form-check-label" for="twohundred">m</label>
+  </div>
+  <div class="form-check collection-filter-checkbox">
+      <input type="checkbox" class="form-check-input" id="threehundred">
+      <label class="form-check-label" for="threehundred">l</label>
+  </div>
+  <div class="form-check collection-filter-checkbox">
+      <input type="checkbox" class="form-check-input" id="fourhundred">
+      <label class="form-check-label" for="fourhundred">xl</label>
+  </div>
+</div>
+</div>
+</div>
+ <div class="collection-collapse-block open">
+   <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+ PRICE
+   </button>
+ <p></p>
+ <div class="collapse5" id="collapseExample5">
+   <div class="card card-body">
+   <div class="collection-collapse-block-content">
+       <div class="wrapper mt-3">
+        <div class="slidecontainer">
+          <input type="range" min="0" max="1500" value="50" class="slider" id="myRange">
+          <div>$<span id="demo">50</span></div>
+        </div>
+       </div>
+   </div>
+ </div>
+</div>
+</div>
+       
+        <div class=" row row-cols-1 ">
+      <div class="col ">
+        <div class="card  flex-row">
+          <div class="we">
+          <img src="http://themes.pixelstrap.com/multikart/assets/images/pro3/27.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="product-detail">
+              <div class="rating"><i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i>
+                 <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star"></i></div>
+              <a href="#">
+                  <h6>sleevles white tshirt with text</h6>
+              </a>
+              <h4>$65.00</h4>
+            
+            
+            </div>
+          </div>
+        </div>
+        </div>
+          <div class="col">
+            <div class="card  flex-row">
+              <div class="iamgee">
+              <img src="http://themes.pixelstrap.com/multikart/assets/images/pro3/1.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <div class="product-detail">
+                  <div class="rating"><i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star"></i></div>
+                 <a href="#">
+                      <h6>sleevles white tshirt with text</h6>
+                  </a>
+                  <h4>$65.00</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card  flex-row">
+              <div class="imagee">
+              <img src="http://themes.pixelstrap.com/multikart/assets/images/pro3/33.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <div class="product-detail">
+                  <div class="rating"><i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i> <i class="fa fa-star checked"></i> <i class="fa fa-star"></i></div>
+                 <a href="#">
+                      <h6>multi-color polo tshirt</h6>
+                  </a>
+                  <h4>$45.00</h4>
+             
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="collection-sidebar-banner">
+          <a href="#"><img src="http://themes.pixelstrap.com/multikart/assets/images/side-banner.png" class="img-fluid blur-up lazyloaded" alt=""></a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
  <!--choose list-->
 
   <div class="row">
-      <div class="col">
-          <div class="filter-main-btn"><span class="filter-btn btn btn-theme"><i class="fa fa-filter" aria-hidden="true"></i> Filter</span></div>
-      </div>
-     <div class="col">
+     
+     <div class="col-lg-4 col-md-12 text-center ">
           <div class="product-filter-content">
               <div class="search-count">
                   <p>Showing Products 1-24 of 10 Result</p>
@@ -593,54 +756,45 @@
                 This is a DIV element.
                 </div>-->
                 
-             
-                <div class="col">
+                <div class="col d-none d-md-block">
                 <button  class=" btn btn-light  fa fa-th grid-layout-view" onclick="ChangeClass1()"></button>
               </div>
-                <div class="col">
+                <div class="col d-none d-md-block">
                  <button  class="btn btn-light fa fa-list-ul list-layout-view" onclick="ChangeClass2()"></button>
               </div>
-              <div class="col">
-                    <button class=" btn btn-light " onclick="ChangeClass3()"> 
+              <div class="col  d-none d-md-block">
+                    <button class=" btn btn-light " onclick="ChangeClass6()"> 
                         <img src="http://themes.pixelstrap.com/multikart/assets/images/icon/2.png"  alt="" class="product-2-layout-view"></button> 
                       </div>
-                        <div class="col">
-                     <button   class=" btn btn-light " onclick="ChangeClass4()"> 
+                        <div class="col d-none d-md-block">
+                     <button   class=" btn btn-light " onclick="ChangeClass5()"> 
                        <img src="http://themes.pixelstrap.com/multikart/assets/images/icon/3.png"  alt="" class="product-3-layout-view"></button> 
                       </div>
-                       <div class="col">
-                     <button class=" btn btn-light "  onclick="ChangeClass5()" >     
+                       <div class="col d-none d-md-block">
+                     <button class=" btn btn-light "  onclick="ChangeClass4()" >     
                        <img src="http://themes.pixelstrap.com/multikart/assets/images/icon/4.png"  alt="" class="product-4-layout-view"></button> 
                       </div>
-                       <div class="col">
-                     <button  class=" btn btn-light "  onclick="ChangeClass6()">  
+                       <div class="col d-none d-md-block">
+                     <button  class=" btn btn-light "  onclick="ChangeClass3()">  
                       <img src="http://themes.pixelstrap.com/multikart/assets/images/icon/6.png" alt="" class="product-6-layout-view"></button> 
               </div>
+            
               <div class="col">
-                  <select>
-                      <option value="High to low">24 Products Par Page
-                      </option>
-                      <option value="Low to High">50 Products Par Page
-                      </option>
-                      <option value="Low to High">100 Products Par Page
-                      </option>
-                  </select>
-              </div>
-              <div class="col">
-                  <select>
-                      <option value="High to low">Sorting items</option>
-                      <option value="Low to High">50 Products</option>
-                      <option value="Low to High">100 Products</option>
+                <select id="information">
+                      <option value="minProducts" >Sorting items</option>
+                      <option value="NormalProducts">10 Products</option>
+                      <option value="HighProducts">20 Products</option>
                   </select>
               </div>
           </div>
-  
 <div class="contaiener" >
   <div id="myForm"   >
     <div class="row row-cols-lg-4  row-cols-sm-2 "  id="info">
   </div>
 </div>
 </div>
+
+
 
   <!--list product-->
   <div class="product-pagination">
